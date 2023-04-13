@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TelaCadastro"
+        android:background="@drawable/background_telas">
+
+        <View
+            android:id="@+id/containerdois"
+            style="@style/Containerdois"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="239dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/texto01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto8"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/containerdois"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/containercadastro"
+            style="@style/Containerinvisivel"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto01"
+            />
+
+        <EditText
+            android:id="@+id/edit_nome"
+            style="@style/Edittextcadastro"
+            android:hint="@string/nome"
+            android:drawableEnd="@drawable/ic_person"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="@id/containercadastro"
+            app:layout_constraintEnd_toEndOf="@+id/containercadastro"
+            app:layout_constraintTop_toTopOf="@+id/containercadastro"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edit_cpf"
+            style="@style/Edittextcadastro"
+            android:hint="@string/documento"
+            android:drawableEnd="@drawable/ic_doc"
+            android:inputType=""
+            app:layout_constraintStart_toStartOf="@id/containercadastro"
+            app:layout_constraintEnd_toEndOf="@+id/containercadastro"
+            app:layout_constraintTop_toBottomOf="@+id/edit_nome"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/Edittextcadastro"
+            android:hint="@string/email"
+            android:drawableEnd="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@id/containercadastro"
+            app:layout_constraintEnd_toEndOf="@+id/containercadastro"
+            app:layout_constraintTop_toBottomOf="@+id/edit_cpf"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edit_contatophone"
+            style="@style/Edittextcadastro"
+            android:hint="@string/contato"
+            android:drawableEnd="@drawable/ic_contact_phone"
+            android:inputType="phone"
+            app:layout_constraintStart_toStartOf="@id/containercadastro"
+            app:layout_constraintEnd_toEndOf="@+id/containercadastro"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email"
+            android:autofillHints="" />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_salvarcadastro"
+            style="@style/Button_salvar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/bt_gravar"
+            app:layout_constraintTop_toBottomOf="@id/containerperfil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_salvarcadastro"/>
+
+        <View
+            android:id="@+id/containerperfil"
+            style="@style/Containerinvisivel"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containercadastro"
+            />
+
+        <Switch
+            android:id="@+id/perfiladm"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Administrador"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/containerperfil" />
+
+        <Switch
+            android:id="@+id/perfilopn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Operacional"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/perfiladm" />
+
+        <TextView
+            android:id="@+id/text_cadastroperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o perfil do usuário:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_contatophone"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

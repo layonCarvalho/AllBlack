@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">All Black</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_inicial">Informe e-mail e senha para acessar.</string>
+    <string name="logo">Logo</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="documento">CPF</string>
+    <string name="perfil">Perfil de usuário</string>
+    <string name="contato">Telefone ( ) _____-____</string>
+    <string name="title_activity_tela_principal">TelaPrincipal</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="menu">Menu</string>
+    <string name="bt1">Produção</string>
+    <string name="bt2">Estoque</string>
+    <string name="bt3">Vendas</string>
+    <string name="bt4">Alterar Dados</string>
+    <string name="bt5">Cadastro</string>
+    <string name="bt6">Sair</string>
+    <string name="texto1">Tela de Produção</string>
+    <string name="texto2">Tela de Estoque</string>
+    <string name="texto3">Tela de Vendas</string>
+    <string name="texto4">Tela de Alteração de Dados</string>
+    <string name="texto5">Tela de Cadastro</string>
+    <string name="texto6">Tela Consulta de Vendas</string>
+    <string name="texto7">Tela Registro de Vendas</string>
+    <string name="texto8">Tela Cadastro de Usuário</string>
+    <string name="texto9">Tela Cadastro de Produtos</string>
+    <string name="textoproducao">Digite a QTD</string>
+    <string name="produto1">Pacote de 2Kg</string>
+    <string name="produto2">Pacote de 5Kg</string>
+    <string name="produto3">Pacote de 10Kg</string>
+    <string name="produto4">Pacote de 15Kg</string>
+    <string name="produto5">Pacote de 20Kg</string>
+    <string name="data">__/__/____</string>
+    <string name="bt_salvar">Salvar</string>
+    <string name="bt_gravar">Gravar</string>
+    <string name="produto_estoque1">Pacote de 2Kg = 71</string>
+    <string name="produto_estoque2">Pacote de 5Kg = 34</string>
+    <string name="produto_estoque3">Pacote de 10Kg = 31</string>
+    <string name="produto_estoque4">Pacote de 15Kg = 81</string>
+    <string name="produto_estoque5">Pacote de 20Kg = 67</string>
+    <string name="aplicarfiltro">Filtrar</string>
+    <string name="bt_consultavendas">Consultar Vendas</string>
+    <string name="bt_registrovendas">Resgistrar Vendas</string>
+    <string name="bt_cadastrouusuario">Cadastar Novo Usuário</string>
+    <string name="bt_cadastarproduto">Cadastar Novo Produto</string>
+
+
+</resources>

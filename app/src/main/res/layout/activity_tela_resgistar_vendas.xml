@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_telas"
+        tools:context=".TelaProducao">
+
+        <View
+            android:id="@+id/containerdois"
+            style="@style/Containerdois"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="239dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/texto01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto7"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/containerdois"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/containerinvisivel"
+            style="@style/Containerinvisivel"
+            android:layout_width="390dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_producao" />
+
+        <EditText
+            android:id="@+id/data_producao"
+            style="@style/Edittext_Dataproducao"
+            android:hint="@string/data"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:inputType="text|date"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerdois"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/produto1"
+            style="@style/produtos"
+            android:text="@string/produto1"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/containerinvisivel"
+            app:layout_constraintTop_toTopOf="@id/containerinvisivel"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_produto1"
+            style="@style/Edittext_producao"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:hint="@string/textoproducao"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/produto1"
+            app:layout_constraintTop_toTopOf="@id/containerinvisivel"
+            />
+
+        <TextView
+            android:id="@+id/produto2"
+            style="@style/produtos"
+            android:text="@string/produto2"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/containerinvisivel"
+            app:layout_constraintTop_toBottomOf="@id/produto1"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_produto2"
+            style="@style/Edittext_producao"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:hint="@string/textoproducao"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/produto2"
+            app:layout_constraintTop_toBottomOf="@id/edit_produto1"
+            />
+
+        <TextView
+            android:id="@+id/produto3"
+            style="@style/produtos"
+            android:text="@string/produto3"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/containerinvisivel"
+            app:layout_constraintTop_toBottomOf="@id/produto2"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_produto3"
+            style="@style/Edittext_producao"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:hint="@string/textoproducao"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/produto3"
+            app:layout_constraintTop_toBottomOf="@id/edit_produto2"
+            />
+
+        <TextView
+            android:id="@+id/produto4"
+            style="@style/produtos"
+            android:text="@string/produto4"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@id/containerinvisivel"
+            app:layout_constraintTop_toBottomOf="@id/produto3"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_produto4"
+            style="@style/Edittext_producao"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:hint="@string/textoproducao"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/produto4"
+            app:layout_constraintTop_toBottomOf="@id/edit_produto3"
+            />
+        <TextView
+            android:id="@+id/produto5"
+            style="@style/produtos"
+            android:text="@string/produto5"
+            android:layout_width="210dp"
+            app:layout_constraintStart_toStartOf="@id/containerinvisivel"
+            app:layout_constraintTop_toBottomOf="@id/produto4"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_produto5"
+            style="@style/Edittext_producao"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:hint="@string/textoproducao"
+            android:inputType="number"
+            app:layout_constraintLeft_toRightOf="@id/produto5"
+            app:layout_constraintTop_toBottomOf="@id/edit_produto4"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_salvar"
+            style="@style/Button_salvar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/bt_salvar"
+            app:layout_constraintTop_toBottomOf="@id/containerinvisivel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:indeterminateTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_salvar"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

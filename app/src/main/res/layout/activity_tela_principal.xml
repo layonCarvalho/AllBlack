@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_telas"
+    tools:context=".TelaPrincipal">
+
+
+    <View
+        android:id="@+id/containerdois"
+        style="@style/Containerdois"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+    <View
+        android:id="@+id/containertelainicial"
+        style="@style/Containertelainicial"
+        android:layout_width="354dp"
+        android:layout_height="462dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="239dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_1"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/bt1"
+        app:layout_constraintTop_toTopOf="@id/containertelainicial"
+        app:layout_constraintStart_toStartOf="@id/containertelainicial"
+        app:layout_constraintLeft_toLeftOf="@id/bt_2"
+         />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_2"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/bt2"
+        app:layout_constraintTop_toTopOf="@id/containertelainicial"
+        app:layout_constraintEnd_toEndOf="@id/containertelainicial"
+        app:layout_constraintRight_toRightOf="@id/bt_1"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_3"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/bt3"
+        app:layout_constraintTop_toBottomOf="@id/bt_1"
+        app:layout_constraintStart_toStartOf="@id/containertelainicial"
+        app:layout_constraintLeft_toLeftOf="@id/bt_4"
+         />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_4"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/bt4"
+        app:layout_constraintTop_toBottomOf="@id/bt_2"
+        app:layout_constraintEnd_toEndOf="@id/containertelainicial"
+        app:layout_constraintLeft_toLeftOf="@id/bt_3" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_5"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/bt5"
+        app:layout_constraintTop_toBottomOf="@id/bt_3"
+        app:layout_constraintStart_toStartOf="@id/containertelainicial"
+        app:layout_constraintLeft_toLeftOf="@id/bt_6" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_6"
+        style="@style/Button"
+        android:layout_width="143dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/bt6"
+        app:layout_constraintTop_toBottomOf="@id/bt_4"
+        app:layout_constraintEnd_toEndOf="@id/containertelainicial"
+        app:layout_constraintLeft_toLeftOf="@id/bt_5" />
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
