@@ -29,6 +29,7 @@ public class TelaVendas extends AppCompatActivity {
                 Intent intent = new Intent(TelaVendas.this, tela_consulta_vendas.class);
                 startActivity(intent);
 
+                return ;
             }
         });
 
@@ -39,6 +40,7 @@ public class TelaVendas extends AppCompatActivity {
                 Intent intent = new Intent(TelaVendas.this, tela_resgistar_vendas.class);
                 startActivity(intent);
 
+                return ;
             }
         });
     }

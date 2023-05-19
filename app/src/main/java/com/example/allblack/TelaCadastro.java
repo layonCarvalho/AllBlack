@@ -28,6 +28,7 @@ public class TelaCadastro extends AppCompatActivity {
                 Intent intent = new Intent(TelaCadastro.this, tela_cadastro_usuario.class);
                 startActivity(intent);
 
+                return ;
             }
         });
 
@@ -38,6 +39,7 @@ public class TelaCadastro extends AppCompatActivity {
                 Intent intent = new Intent(TelaCadastro.this, tela_cadastro_produtos.class);
                 startActivity(intent);
 
+                return ;
             }
         });
     }

@@ -27,6 +27,7 @@ public class tela_resgistar_vendas extends AppCompatActivity {
                 finish();
                 Toast.makeText(tela_resgistar_vendas.this, "Informações salvas!", Toast.LENGTH_SHORT).show();
 
+                return ;
             }
         });
 

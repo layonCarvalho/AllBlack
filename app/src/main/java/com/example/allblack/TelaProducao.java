@@ -28,6 +28,7 @@ public class TelaProducao extends AppCompatActivity {
                 finish();
                 Toast.makeText(TelaProducao.this, "Informações salvas!", Toast.LENGTH_SHORT).show();
 
+                return ;
             }
         });
 

@@ -27,6 +27,7 @@ public class tela_cadastro_usuario extends AppCompatActivity {
                 finish();
                 Toast.makeText(tela_cadastro_usuario.this, "Usuário Cadastrado!", Toast.LENGTH_SHORT).show();
 
+                return ;
             }
         });
 
